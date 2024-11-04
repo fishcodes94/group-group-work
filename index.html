@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+
+    <!-- Example team logo -->
+    <div  class="image-logo-container">
+    <img src="img/jjc-logo.png" alt="Team Logo" class="team-logo">
+    <h1>JJC Visionaries</h1>
+    </div>
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Chadrick Fisher</h2>
+        <img class="profile-pic" src="img/profile-pic1.png">
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div id="bio1" class="bio">
+        <p>Chadrick is a frontend developer with experience in creating responsive web applications.</p>
+        <img class="story-board" src="img/story-board.png">
+            </div>
+    </div>
+    <div class="card">
+        <h2>Jane Smith</h2>
+        <p>Backend Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+    </div>
+    <div class="card">
+        <h2>Emily Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We are a team of three software engineers who share an interest for coding, problem-solving, and constantly improving our skills. We value creativity, collaboration, and delivering high-quality work. Each of us brings something unique to the table, whether it's frontend design, backend development, or Ul/UX design, and we belleve that combining our strengths will help us achieve our goals.</p>
+
+    <h3>Team Rules</h3>
+    <ul>
+        <li><strong>Clear Communication:</strong> We'll keep things open and honest, making sure everyone's thoughts and concerns are heard.</li>
+        <li><strong>Stick to Deadlines:</strong> We respect deadlines and will do our part to keep the project on track.</li>
+        <li><strong>Team Support:</strong> We'll help each other out and make sure no one feels stuck or overwhelmed.</li>
+        <li><strong>Give and Take Feedback:</strong> We're here to grow, so we'll offer feedback constructively and take it in stride.</li>
+        <li><strong>Respect Each Other's Time:</strong> We'll be mindful of everyone's time by keeping meetings efficient and responding promptly.</li>
+        <li><strong>Stay Flexible and Keep Learning:</strong> We're all about learning new things and adapting when challenges come up.</li>
+    </ul>
+
+    <p>Our goal is to do great work, support each other, and make the most of this experience to become better engineers and teammates.</p>
+
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
